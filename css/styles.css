@@ -1,0 +1,115 @@
+/* Основний колір текста #212121 */
+/* Додатковий колір текста #757575 */
+/* Білий колір текста #FFFFFF */
+/* другий білий колір rgba(255, 255, 255, 0.6) */
+/* Колір акцента #2196F3 */
+/* основний колір фона #E5E5E5 */
+/* додатковий колір фона #F5F4FA */
+/* колір фона шапки #FFFFFF */
+/* колір фона героя #2F303A */
+/* колір фона футера #2F303A */
+/* колір логотипу 1-частина #2196F3, 2-частина #000000 */
+
+/* ПОРТФОЛІО */
+/* колір кнопки #F5F4FA */
+/* колір акцента кнопки #2196F3 */
+
+:root {
+  --primary-font-color: #212121;
+  --secondary-font-color: #757575;
+  --wite-text-color: #ffffff;
+  --button-color: #2196f3;
+  --button-accent-color: #f5f4fa;
+}
+/* Основні властивості, які наслідуються у тілі сторінки */
+body {
+  color: var(--primary-font-color);
+  background-color: #e5e5e5;
+}
+/* header */
+header {
+  background-color: #ffffff;
+}
+/* навігація по сторінці */
+.logo {
+  color: #000000;
+}
+
+.logo-color {
+  color: #2196f3;
+}
+
+.link-studio {
+  color: #2196f3;
+}
+
+.link-portfolio,
+.link-contacts {
+  color: var(--primary-font-color);
+}
+
+.link-studio:hover,
+.link-studio:focus,
+.link-portfolio:hover,
+.link-portfolio:focus,
+.link-contacts:hover,
+.link-contacts:focus {
+  color: #2196f3;
+}
+/* контакти */
+.mail-tel a {
+  color: var(--primary-font-color);
+}
+
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+  color: #2196f3;
+}
+/* main */
+/* Герой Секція 1*/
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--wite-text-color);
+}
+
+.hero-button {
+  color: var(--wite-text-color);
+  background-color: #2196f3;
+}
+
+/* Секція 2 */
+.list-fist-text,
+.list-second-text,
+.list-third-text,
+.list-fourth-text {
+  color: var(--secondary-font-color);
+}
+
+/* Секція 3 */
+
+/* Секція 4 */
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-profession {
+  color: var(--secondary-font-color);
+}
+
+/* Підвал */
+.contacts {
+  background-color: #2f303a;
+}
+/* Логотип наслідує властивості, задані логотипу у шапці */
+.contacts-address {
+  color: var(--wite-text-color);
+}
+.contacts-mail,
+.contacts-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
