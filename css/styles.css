@@ -9,17 +9,18 @@
 /* колір фона героя #2F303A */
 /* колір фона футера #2F303A */
 /* колір логотипу 1-частина #2196F3, 2-частина #000000 */
-
-/* ПОРТФОЛІО */
 /* колір кнопки #F5F4FA */
 /* колір акцента кнопки #2196F3 */
+
+/* ПОРТФОЛІО */
 
 :root {
   --primary-font-color: #212121;
   --secondary-font-color: #757575;
   --wite-text-color: #ffffff;
-  --button-color: #2196f3;
-  --button-accent-color: #f5f4fa;
+  --button-color: #f5f4fa;
+  --button-accent-color: #2196f3;
+  --accent-color: #2196f3;
 }
 /* Основні властивості, які наслідуються у тілі сторінки */
 body {
@@ -54,7 +55,7 @@ header {
 .link-portfolio:focus,
 .link-contacts:hover,
 .link-contacts:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* контакти */
 .mail-tel a {
@@ -65,7 +66,7 @@ header {
 .mail:focus,
 .tel:hover,
 .tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* main */
 /* Герой Секція 1*/
@@ -113,3 +114,55 @@ header {
 .contacts-tel {
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* ПОРТФОЛІО */
+/* Шапка */
+/* Фон шапки наслідується з CSS правила щодо шапки першої сторнінки. */
+.link-nav-portfolio {
+  color: #2196f3;
+}
+
+.link-nav-stdio,
+.link-nav-contacts {
+  color: var(--primary-font-color);
+}
+
+.link-nav-stdio:hover,
+.link-nav-stdio:focus,
+.link-nav-contacts:hover,
+.link-nav-contacts:focus {
+  color: var(--accent-color);
+}
+/* Колір посилань мейлу та телефону наслідуються з CSS правила першої сторнінки.*/
+
+/* main */
+/* Герой Секція */
+/* Колір фону наслідується з CSS правила першої сторнінки.*/
+.button-library,
+.button-websits,
+.button-applications,
+.utton-design,
+.button-marketing {
+  counter-reset: var(--primary-font-color);
+  background-color: var(--button-color);
+}
+
+.button-library:hover,
+.button-websits:hover,
+.button-applications:hover,
+.button-design:hover,
+.button-marketing:hover,
+.button-library:focus,
+.button-websits:focus,
+.button-applications:focus,
+.button-design:focus,
+.button-marketing:focus {
+  color: var(--wite-text-color);
+  background-color: var(--button-accent-color);
+}
+.examples .examples-text {
+  color: var(--secondary-font-color);
+}
+
+/* Підвал */
+/* Фон та колір наслідується з CSS правила щодо Підвалу першої сторнінки. */
