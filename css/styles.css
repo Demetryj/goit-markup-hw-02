@@ -148,7 +148,7 @@ header {
 }
 
 .button-library:hover,
-.button-websits:hover,
+.button-websites:hover,
 .button-applications:hover,
 .button-design:hover,
 .button-marketing:hover,
@@ -160,7 +160,7 @@ header {
   color: var(--wite-text-color);
   background-color: var(--button-accent-color);
 }
-.examples .examples-text {
+.projects .projects-text {
   color: var(--secondary-font-color);
 }
 
