@@ -82,7 +82,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-font-color);
+  color: var(--secondary-font-color);
 }
 
 .mail:hover,
@@ -114,10 +114,10 @@ body {
 }
 
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--wite-text-color);
   background-color: #2196f3;
@@ -175,7 +175,6 @@ body {
 }
 
 .team-profession {
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -194,6 +193,11 @@ body {
   list-style: none;
 }
 /* Логотип наслідує властивості, задані логотипу у шапці */
+
+.contacts > .logo {
+  color: #ffffff;
+}
+
 .contacts-address {
   font-style: normal;
   font-weight: 400;
@@ -258,10 +262,10 @@ body {
 .button-applications,
 .button-design,
 .button-marketing {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   counter-reset: var(--primary-font-color);
   background-color: var(--button-color);
@@ -293,7 +297,6 @@ body {
   color: var(--primary-font-color);
 }
 .projects-text {
-  font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
