@@ -84,10 +84,7 @@ header {
 }
 
 /* Секція 2 */
-.list-fist-text,
-.list-second-text,
-.list-third-text,
-.list-fourth-text {
+.work-text {
   color: var(--secondary-font-color);
 }
 
@@ -118,19 +115,19 @@ header {
 /* ПОРТФОЛІО */
 /* Шапка */
 /* Фон шапки наслідується з CSS правила щодо шапки першої сторнінки. */
-.link-nav-portfolio {
+.nav-portfolio {
   color: #2196f3;
 }
 
-.link-nav-stdio,
-.link-nav-contacts {
+.nav-stdio,
+.nav-contacts {
   color: var(--primary-font-color);
 }
 
-.link-nav-stdio:hover,
-.link-nav-stdio:focus,
-.link-nav-contacts:hover,
-.link-nav-contacts:focus {
+.nav-stdio:hover,
+.nav-stdio:focus,
+.nav-contacts:hover,
+.nav-contacts:focus {
   color: var(--accent-color);
 }
 /* Колір посилань мейлу та телефону наслідуються з CSS правила першої сторнінки.*/
@@ -141,7 +138,7 @@ header {
 .button-library,
 .button-websits,
 .button-applications,
-.utton-design,
+.button-design,
 .button-marketing {
   counter-reset: var(--primary-font-color);
   background-color: var(--button-color);
