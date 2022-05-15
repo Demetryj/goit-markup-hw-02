@@ -24,15 +24,22 @@
 }
 /* Основні властивості, які наслідуються у тілі сторінки */
 body {
+  font-family: Roboto, sans-serif;
   color: var(--primary-font-color);
   background-color: #e5e5e5;
 }
 /* header */
-header {
+.header {
   background-color: #ffffff;
 }
 /* навігація по сторінці */
 .logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -41,11 +48,21 @@ header {
 }
 
 .link-studio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   color: #2196f3;
 }
 
 .link-portfolio,
 .link-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--primary-font-color);
 }
 
@@ -58,7 +75,13 @@ header {
   color: var(--accent-color);
 }
 /* контакти */
-.mail-tel a {
+.mail-tel .mail,
+.mail-tel .tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--primary-font-color);
 }
 
@@ -68,6 +91,12 @@ header {
 .tel:focus {
   color: var(--accent-color);
 }
+
+.link,
+.mail-tel {
+  list-style: none;
+}
+
 /* main */
 /* Герой Секція 1*/
 .hero {
@@ -75,52 +104,136 @@ header {
 }
 
 .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--wite-text-color);
 }
 
 .hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: var(--wite-text-color);
   background-color: #2196f3;
+  cursor: pointer;
 }
 
 /* Секція 2 */
+.work-benefits {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .work-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+.work-list {
+  list-style: none;
 }
 
 /* Секція 3 */
+.technology-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.technology-list {
+  list-style: none;
+}
 
 /* Секція 4 */
 .team {
   background-color: #f5f4fa;
 }
 
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .team-profession {
-  color: var(--secondary-font-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list {
+  list-style: none;
 }
 
 /* Підвал */
 .contacts {
   background-color: #2f303a;
 }
+
+.contacts-list {
+  list-style: none;
+}
 /* Логотип наслідує властивості, задані логотипу у шапці */
 .contacts-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--wite-text-color);
 }
 .contacts-mail,
 .contacts-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* ПОРТФОЛІО */
 /* Шапка */
 /* Фон шапки наслідується з CSS правила щодо шапки першої сторнінки. */
+/* Логтип наслідує властивості з CSS правила щодо Логотипу першої сторнінки.*/
 .nav-portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   color: #2196f3;
 }
 
 .nav-stdio,
 .nav-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--primary-font-color);
 }
 
@@ -130,18 +243,29 @@ header {
 .nav-contacts:focus {
   color: var(--accent-color);
 }
-/* Колір посилань мейлу та телефону наслідуються з CSS правила першої сторнінки.*/
+
+.nav {
+  list-style: none;
+}
+
+/* Властивості посилання мейлу та телефону наслідуються з CSS правила першої сторнінки.*/
 
 /* main */
 /* Герой Секція */
 /* Колір фону наслідується з CSS правила першої сторнінки.*/
 .button-library,
-.button-websits,
+.button-websites,
 .button-applications,
 .button-design,
 .button-marketing {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   counter-reset: var(--primary-font-color);
   background-color: var(--button-color);
+  cursor: pointer;
 }
 
 .button-library:hover,
@@ -157,9 +281,28 @@ header {
   color: var(--wite-text-color);
   background-color: var(--button-accent-color);
 }
-.projects .projects-text {
+
+.button {
+  list-style: none;
+}
+
+.projects-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-font-color);
+}
+.projects-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+
+.projects {
+  list-style: none;
 }
 
 /* Підвал */
 /* Фон та колір наслідується з CSS правила щодо Підвалу першої сторнінки. */
+/* Контакти наслідують властивості текста та шрифта з CSS правила щодо Підвалу першої сторнінки.*/
