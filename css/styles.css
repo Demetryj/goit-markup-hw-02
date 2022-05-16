@@ -178,6 +178,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
 }
 
 .team-list {
@@ -199,8 +200,6 @@ body {
 }
 
 .contacts-address {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -209,13 +208,15 @@ body {
 }
 .contacts-mail,
 .contacts-tel {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address {
+  font-style: normal;
 }
 
 /* ПОРТФОЛІО */
