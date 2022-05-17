@@ -3,7 +3,7 @@
 /* Білий колір текста #FFFFFF */
 /* другий білий колір rgba(255, 255, 255, 0.6) */
 /* Колір акцента #2196F3 */
-/* основний колір фона #E5E5E5 */
+/* основний колір фона #FFFFFF */
 /* додатковий колір фона #F5F4FA */
 /* колір фона шапки #FFFFFF */
 /* колір фона героя #2F303A */
@@ -26,7 +26,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-font-color);
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 /* header */
 .header {
