@@ -6,7 +6,6 @@
 /* основний колір фона #FFFFFF */
 /* додатковий колір фона #F5F4FA */
 /* колір фона шапки #FFFFFF */
-/* колір фона героя #2F303A */
 /* колір фона футера #2F303A */
 /* колір логотипу 1-частина #2196F3, 2-частина #000000 */
 /* колір кнопки #F5F4FA */
@@ -28,11 +27,22 @@ body {
   color: var(--primary-font-color);
   background-color: #ffffff;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid red;
+}
+
 /* header */
 .header {
   background-color: #ffffff;
-  /* Тимчасовий фон для хедера, щоб було видно текст */
+
+  border-bottom: 1px solid #ececec;
 }
+
 /* навігація по сторінці */
 .logo {
   font-family: Raleway, sans-serif;
@@ -41,6 +51,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
   color: #000000;
 }
 
@@ -54,6 +65,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: #2196f3;
 }
 
@@ -64,6 +76,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: var(--primary-font-color);
 }
 
@@ -76,6 +89,11 @@ body {
   color: var(--accent-color);
 }
 /* контакти */
+.mail-tel {
+  padding: 0;
+  margin: 0;
+}
+
 .mail-tel .mail,
 .mail-tel .tel {
   font-weight: 500;
@@ -83,6 +101,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: var(--secondary-font-color);
 }
 
@@ -99,34 +118,60 @@ body {
 }
 
 /* main */
-/* Герой Секція 1*/
+
+.container.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Герой Секція 1*/ /* Тимчасовий фон для героя, щоб було видно текст */
 .hero {
-  background-color: #2f303a;
+  background-color: #0b1261;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--wite-text-color);
 }
 
 .hero-button {
+  min-height: 50px;
+  min-width: 200px;
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--wite-text-color);
   background-color: #2196f3;
   cursor: pointer;
+
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 /* Секція 2 */
+.work-title {
+  display: none;
+}
+
 .work-benefits {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -134,17 +179,27 @@ body {
 }
 
 .work-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--secondary-font-color);
 }
 .work-list {
+  margin-top: 0;
+  margin-bottom: 0;
+
   list-style: none;
 }
 
 /* Секція 3 */
 .technology-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -152,7 +207,14 @@ body {
 }
 
 .technology-list {
+  margin-top: 0;
+  margin-bottom: 0;
+
   list-style: none;
+}
+
+.card {
+  display: block;
 }
 
 /* Секція 4 */
@@ -161,6 +223,9 @@ body {
 }
 
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -168,6 +233,9 @@ body {
 }
 
 .team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -176,14 +244,31 @@ body {
 }
 
 .team-profession {
+  margin-top: 0;
+  margin-bottom: 0;
+
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--secondary-font-color);
 }
 
 .team-list {
+  margin-top: 0;
+  margin-bottom: 0;
+
   list-style: none;
+}
+
+.team-specialist {
+  background: #ffffff;
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-specialist > .card {
+  margin-bottom: 30px;
 }
 
 /* Підвал */
@@ -196,6 +281,25 @@ body {
 }
 /* Логотип наслідує властивості, задані логотипу у шапці */
 
+.contacts > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo.footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contacts-list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.list-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contacts > .logo {
   color: #ffffff;
 }
@@ -205,6 +309,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+
   color: var(--wite-text-color);
 }
 .contacts-mail,
@@ -213,6 +318,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -230,6 +336,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: #2196f3;
 }
 
@@ -240,6 +347,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: var(--primary-font-color);
 }
 
@@ -269,8 +377,10 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
   counter-reset: var(--primary-font-color);
   background-color: var(--button-color);
+
   cursor: pointer;
 }
 
@@ -296,11 +406,13 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--primary-font-color);
 }
 .projects-text {
   line-height: 1.18;
   letter-spacing: 0.03em;
+
   color: var(--secondary-font-color);
 }
 
